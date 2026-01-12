@@ -51,6 +51,11 @@ Repeat for:
 ✅ Code is safe
 ✅ React app still works
 
+.git folder won't open if the parent already has. This below command instantly tells you where Git lives
+
+git rev-parse --show-toplevel
+
+
 ---
 
 # 🟢 STEP 2: Initialize Git ONLY in `TAL`
