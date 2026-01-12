@@ -13,6 +13,32 @@ This repository collects several small demos on how the DOM and React work.
 
 - **react04-props-state-demo**: Examples of props & state; uses `rspack` for development 
 
+## Newly added 12-January
+
+- **react05-lifecycle-demo**: Demonstrates React lifecycle methods 
+
+- **react06-function-class-components-demo**: Comparison of functional vs class components in React  
+
+- **react07-props-state-demo**: Extended props & state examples with multiple components  
+
+- **react08-props-passing-data-bw-components-demo**: Passing data between parent and child components via props  
+
+- **react09-manage-state-demo**: Managing and updating state in React applications  
+
+- **react10-use-effect0hooks-demo**: Basic usage of `useEffect` hook for side effects  
+
+- **react10-use-effect1-demo**: Advanced `useEffect` scenarios 
+
+- **react11-synthetic-event-demo**: Demonstrates React’s Synthetic Event system  
+
+- **react12-event-handler-demo**: Handling user interactions with event handlers  
+
+- **react13-event-bubbling-capturing-rspackdemo**: Event bubbling and capturing demonstration (Rspack setup)  
+
+- **react14-preventdefault-rspack**: Using `preventDefault` to stop default event behavior (Rspack setup)  
+
+- **react15-controlled-uncontrolled-rspack**: Controlled vs uncontrolled components in forms (Rspack setup)  
+
 **Quick start (per demo)**
 
 **Prerequisites**
