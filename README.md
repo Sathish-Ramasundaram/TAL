@@ -39,6 +39,36 @@ This repository collects several small demos on how the DOM and React work.
 
 - **react15-controlled-uncontrolled-rspack**: Controlled vs uncontrolled components in forms (Rspack setup)  
 
+## Newly added 13-January
+
+- **react16-1-HTML-and-JS-form-demo**: Basic HTML and JavaScript form handling demonstration  
+
+- **react16-forms-demo**: React form handling with Rspack setup  
+
+- **react17-form-handling**: Advanced form handling patterns and techniques in React  
+
+- **react18-form-validation**: Form validation implementation in React applications  
+
+- **react19-router-demo**: Introduction to React Router for client-side routing  
+
+- **react20-dynamic-routes**: Dynamic routing based on data and parameters  
+
+- **react20-dynamic-routes-realworld**: Real-world example of dynamic routing patterns  
+
+- **react21-protected-routes**: Implementing authentication-based protected routes  
+
+- **react22-devtools-demo**: Using React DevTools for debugging and performance analysis  
+
+- **react23-1-runtime-error-HTML-JavaScript**: HTML and JavaScript runtime error handling  
+
+- **react23-error-debugging**: Debugging errors in React applications  
+
+- **react24-error-boundary**: Error boundary implementation for error handling  
+
+- **react24-error-boundary-real-world**: Real-world error boundary patterns  
+
+- **react25-rest-api**: Consuming REST APIs in React applications  
+
 **Quick start (per demo)**
 
 **Prerequisites**
