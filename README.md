@@ -69,6 +69,17 @@ This repository collects several small demos on how the DOM and React work.
 
 - **react25-rest-api**: Consuming REST APIs in React applications  
 
+## Newly added 15-January
+
+- **react26-1-HTML-JS-GraphQL**: GraphQL demonstration using HTML, JS.
+
+- **react26-graphql-vite-demo**: GraphQL demonstration using React, Vite.
+
+- **react31-virtual-dom-rendering-rspack-demo**: Virtual DOM rendering demonstration with Rspack
+
+- **react31-reactmemo-rendering-rspack-demo**: React.memo optimization for component re-renders with Rspack
+
+
 **Quick start (per demo)**
 
 **Prerequisites**
