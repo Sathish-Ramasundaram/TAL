@@ -73,11 +73,21 @@ This repository collects several small demos on how the DOM and React work.
 
 - **react26-1-HTML-JS-GraphQL**: GraphQL demonstration using HTML, JS.
 
-- **react26-graphql-vite-demo**: GraphQL demonstration using React, Vite.
+- **react26-2-graphql-vite-demo5**: GraphQL React Demo with Apollo Client using Vite
+
+- **react26-graphql-demo3**: GraphQL demo with Apollo Client, TypeScript, and Rspack
 
 - **react31-virtual-dom-rendering-rspack-demo**: Virtual DOM rendering demonstration with Rspack
 
 - **react31-reactmemo-rendering-rspack-demo**: React.memo optimization for component re-renders with Rspack
+
+## Newly added 16-January
+
+- **react27-unit-testing-demo2**: Unit testing demonstration for React components
+
+- **react29-storybook-demo14**: React 29 Storybook Demo with Rsbuild for component development
+
+- **react29-storybook-vite-demo**: React Storybook Vite Demo with visual testing and Chromatic
 
 
 **Quick start (per demo)**
