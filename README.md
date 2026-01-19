@@ -89,6 +89,20 @@ This repository collects several small demos on how the DOM and React work.
 
 - **react29-storybook-vite-demo**: React Storybook Vite Demo with visual testing and Chromatic
 
+## Newly added 19-January
+
+- **react08-props-demo2**: Additional examples demonstrating props usage and component reusability
+
+- **react09-state-demo**: Focused demonstrations on managing and updating state in React components
+
+- **react32-context-demo**: Demonstrates React Context API for sharing data across components and avoiding props drilling
+
+- **react32-ref-demo**: Introduction to useRef and how refs store mutable values without causing re-renders
+
+- **react32-ref-example**: Practical examples showing real-world use cases of refs (Mini Google search and no re-render)
+
+- **react33-hoc-demo**: Demonstrates Higher-Order Components (HOCs) and how they are used to wrap components with additional behavior
+
 
 **Quick start (per demo)**
 
