@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Form Without Refresh</title>
+</head>
+<body>
+  <h1>HTML Form (No Refresh)</h1>
+
+  <form id="myForm">
+    <label>
+      Name:
+      <input type="text" id="name">
+    </label>
+    <br><br>
+
+    <label>
+      Email:
+      <input type="email" id="email">
+    </label>
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // stop refresh
+
+      alert(
+        "Name: " + document.getElementById("name").value +
+        "\nEmail: " + document.getElementById("email").value
+      );
+
+      // manually clear inputs
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+    });
+  </script>
+</body>
+</html>

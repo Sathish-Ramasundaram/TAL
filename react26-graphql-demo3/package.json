@@ -1,0 +1,23 @@
+{
+  "name": "react-graphql-users",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "rspack serve --port 3002",
+    "build": "rspack build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@apollo/client": "^3.9.0",
+    "graphql": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "@rspack/core": "^0.6.5",
+    "@rspack/cli": "^0.6.5",
+    "rspack-dev-server": "^0.6.5"
+  }
+}

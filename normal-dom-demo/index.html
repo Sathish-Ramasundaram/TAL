@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Normal DOM Example</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      button {
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .box {
+        margin-top: 20px;
+        padding: 15px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Normal DOM Update</h1>
+
+    <p>
+      Count:
+      <span id="count">0</span>
+    </p>
+
+    <button id="btn">Increase Count</button>
+
+    <div class="box" id="log">
+      Open the console to see DOM updates
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
