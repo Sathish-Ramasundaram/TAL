@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+            // Simple Function
+
+            function sayHello() {
+                console.log("Hello");
+            }
+            
+            sayHello();
+
+            // function with value
+
+            function showNum(num) {
+                console.log(num);
+            }
+
+            showNum(20);
+
+            // function calling another function
+
+            function sta() {
+                showNumber(10);
+            }
+
+            function showNumber(value) {
+                console.log("function calling another function: " + value);
+            }
+
+            sta();
+
+            // function with value
+
+            function double(n) {
+                console.log(n*2);
+            }
+
+            double(20);
+
+            // function with return
+
+            function triple(n) {
+                return n * 3;
+            }
+
+            const result = triple(20);
+            console.log(result);
+
+            // get, set, ready
+
+            function ready(value) {
+                console.log("Final value is:", value);
+            }
+
+            function set(fn) {   // fn === ready
+                fn(10);
+            }
+
+            function get() {
+                set(ready);
+            }
+
+            get();
+
+            // inline
+
+            // function finish(value) {
+            //     console.log("Finished with value:", value);
+            // }
+
+            // function prepare(task) {
+            //     task(10);
+            // }
+            
+            // function start() {
+            //     prepare(finish);
+            // }
+
+            // start();
+
+            // removed this standalone function and moved it to inline
+
+
+            function prepare(task) {
+                task(50);
+            }
+
+            function start() {
+                prepare(function finish(value) {
+                    console.log("Finished with value:", value);
+                });
+            }
+
+            start();
+
+
+
+        </script>
+    </body>
+</html>
