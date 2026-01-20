@@ -103,6 +103,11 @@ This repository collects several small demos on how the DOM and React work.
 
 - **react33-hoc-demo**: Demonstrates Higher-Order Components (HOCs) and how they are used to wrap components with additional behavior
 
+## Newly added 20-January
+
+- **react34-render-props**: Introduces the Render Props pattern by first explaining the core concept using simple JavaScript callback examples, then mapping the same idea to React.
+
+- **react34-render-props-demo**: Demonstrates a practical React implementation of the Render Props pattern
 
 **Quick start (per demo)**
 
