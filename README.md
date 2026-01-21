@@ -109,6 +109,12 @@ This repository collects several small demos on how the DOM and React work.
 
 - **react34-render-props-demo**: Demonstrates a practical React implementation of the Render Props pattern
 
+## Newly added 21-January
+
+- **react35-csr-demo**:
+
+- **react35-ssr-demo**:
+
 **Quick start (per demo)**
 
 **Prerequisites**
