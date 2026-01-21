@@ -111,9 +111,9 @@ This repository collects several small demos on how the DOM and React work.
 
 ## Newly added 21-January
 
-- **react35-csr-demo**:
+- **react35-csr-demo**: Demonstrates **Client-Side Rendering (CSR)** in React, showing how the UI is rendered in the browser after JavaScript loads, and how initial HTML is minimal when viewed via “View Page Source”.
 
-- **react35-ssr-demo**:
+- **react35-ssr-demo**: Demonstrates **Server-Side Rendering (SSR)** using React, showing how the server generates complete HTML before sending it to the browser, enabling faster first paint and better SEO visibility.
 
 **Quick start (per demo)**
 
