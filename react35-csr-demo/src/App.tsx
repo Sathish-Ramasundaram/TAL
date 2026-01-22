@@ -15,7 +15,7 @@ function Item({ title, image }: ItemProps) {
       <img
         src={image}
         alt={title}
-        width={big ? 250 : 100}
+        width={big ? 550 : 100}
         style={{ display: "block", marginBottom: 10 }}
       />
 
@@ -35,8 +35,8 @@ export default function App() {
       />
 
       <Item
-        title="B - Bat - Sports Tool"
-        image="https://upload.wikimedia.org/wikipedia/commons/6/6e/Cricket_bat.jpg"
+        title="L - Lion - Wild Animal"
+        image="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
       />
 
       <Item

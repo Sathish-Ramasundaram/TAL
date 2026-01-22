@@ -13,7 +13,7 @@ type Story = StoryObj<typeof AppLink>;
 export const Default: Story = {
   args: {
     href: "https://reactjs.org",
-    label: "Learn React",
+    label: "Learn JS",
   },
 };
 

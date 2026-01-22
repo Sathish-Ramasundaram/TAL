@@ -1,5 +1,5 @@
 {
-  "name": "react29-storybook-demo2",
+  "name": "react33-hoc-demo3",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,16 +21,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_5e0e268f0f4cfc1"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended"
+      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -46,16 +42,7 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^10.2.0",
-    "@storybook/addon-docs": "^10.2.0",
-    "@storybook/preset-create-react-app": "^10.2.0",
-    "@storybook/react-webpack5": "^10.2.0",
     "ajv": "^8.17.1",
-    "ajv-keywords": "^5.1.0",
-    "chromatic": "^13.3.5",
-    "eslint-plugin-storybook": "^10.2.0",
-    "prop-types": "^15.8.1",
-    "storybook": "^10.2.0",
-    "webpack": "^5.104.1"
+    "ajv-keywords": "^5.1.0"
   }
 }

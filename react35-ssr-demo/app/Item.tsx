@@ -16,7 +16,7 @@ export default function Item({ title, image }: Props) {
 
       <img
         src={image}
-        width={big ? 250 : 100}
+        width={big ? 500 : 100}
         alt={title}
       />
 
