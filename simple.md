@@ -7,11 +7,13 @@ cd project name
 code . (To open new window for this existing project in VS)
 Additonal (code   to open new visual studio, no folder selected)
 
-npm install --save-dev ajv@8 ajv-keywords@5
-
 rmdir /s /q node_modules
 del package-lock.json
 npm install
+
+npm install --save-dev ajv@8 ajv-keywords@5
+
+
 
 npm start
 
