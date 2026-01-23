@@ -1,29 +1,4 @@
 
----
-
-### 2️⃣ Server-Side Rendering (SSR) with React
-
-**What it is**
-Rendering React components **on the server** instead of the browser.
-
-**Why it’s used**
-
-* Faster first page load 🚀
-* Better SEO
-* Better performance on slow devices
-
-**Common tools**
-
-* **Next.js** (most popular)
-* Express + ReactDOMServer
-
-**Flow**
-
-```
-Request → Server renders HTML → Browser hydrates React
-```
-
----
 
 ### 3️⃣ Accessibility (a11y)
 

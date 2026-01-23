@@ -65,3 +65,7 @@ SSR:
 HTML arrives → 🟩 UI already visible → JS loads → interactivity
 
 ----
+
+npx create-next-app@latest abc-ssr-demo --typescript
+cd abc-ssr-demo
+npm run dev
