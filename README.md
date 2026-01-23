@@ -109,9 +109,13 @@ This repository collects several small demos on how the DOM and React work.
 
 - **react34-render-props-demo**: Demonstrates a practical React implementation of the Render Props pattern
 
+---
+
 - **react35-csr-demo**: Demonstrates **Client-Side Rendering (CSR)** in React, showing how the UI is rendered in the browser after JavaScript loads, and how initial HTML is minimal when viewed via “View Page Source”.
 
 - **react35-ssr-demo**: Demonstrates **Server-Side Rendering (SSR)** using React, showing how the server generates complete HTML before sending it to the browser, enabling faster first paint and better SEO visibility.
+
+---
 
 - **react36-accessibility-demo**: Demonstrates Accessibility (a11y) best practices in React, focusing on semantic HTML, proper labeling, keyboard navigation, and ARIA attributes to build inclusive and user-friendly interfaces for all users, including those using assistive technologies.
 
