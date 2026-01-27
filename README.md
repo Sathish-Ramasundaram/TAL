@@ -1,377 +1,165 @@
-## What this project demonstrates (in one line)
+# TAL — Learning Demos
 
-> This project demonstrates how **Redux-Saga** manages **API calls, delays, background polling, and cancellation** in a React + Rspack + TypeScript application.
+This repository collects several small demos on how the DOM and React work.
 
----
+**Projects included**
 
-## Why Redux-Saga is used here
+- **normal-dom-demo**: Plain HTML + JavaScript demonstration of real
 
-Redux reducers:
+- **react01-components-demo**: Small React app (create-react-app scripts) demonstrating components
 
-* must be **pure**
-* must be **synchronous**
-* **cannot** call APIs
-* **cannot** wait or poll
+- **react02-jsx-demo**: JSX-focused React examples using `react-scripts`
 
-Redux-Saga solves this by acting as a **background worker** that:
+- **react03-virtual-dom-demo**: Demonstrates React's virtual DOM concepts (uses `react-scripts`)
 
-* listens for Redux actions
-* performs async work
-* dispatches results back to Redux
+- **react04-props-state-demo**: Examples of props & state; uses `rspack` for development
 
----
+## Newly added 12-January
 
-## Big-picture architecture
+- **react05-lifecycle-demo**: Demonstrates React lifecycle methods
 
-```
-User Action (button click)
-        ↓
-Redux Action dispatched
-        ↓
-Saga listens in background
-        ↓
-Saga performs async logic
-(API / delay / polling)
-        ↓
-Saga dispatches result
-        ↓
-Reducer updates state
-        ↓
-React re-renders UI
-```
+- **react06-function-class-components-demo**: Comparison of functional vs class components in React
 
----
+- **react07-props-state-demo**: Extended props & state examples with multiple components
 
-## What async problems are demonstrated
+- **react08-props-passing-data-bw-components-demo**: Passing data between parent and child components via props
 
-| Feature             | How it is demonstrated               |
-| ------------------- | ------------------------------------ |
-| API calls           | Fetch todos from `dummyjson.com`     |
-| Delays              | Artificial delay before first load   |
-| Background tasks    | Poll API every 5 seconds             |
-| Complex async flows | Start → Fetch → Poll → Stop → Cancel |
+- **react09-manage-state-demo**: Managing and updating state in React applications
 
----
+- **react10-use-effect0hooks-demo**: Basic usage of `useEffect` hook for side effects
 
-## Core idea to remember
+- **react10-use-effect1-demo**: Advanced `useEffect` scenarios
 
-> **React never calls the API.
-> Reducers never call the API.
-> Sagas own all async logic.**
+- **react11-synthetic-event-demo**: Demonstrates React’s Synthetic Event system
 
----
+- **react12-event-handler-demo**: Handling user interactions with event handlers
 
-# 📁 Project Structure
+- **react13-event-bubbling-capturing-rspackdemo**: Event bubbling and capturing demonstration (Rspack setup)
 
-```
-project-root/
-├── public/
-│   └── index.html
-├── src/
-│   ├── index.tsx        # React entry point
-│   ├── App.tsx          # UI buttons + display
-│   ├── store.ts         # Redux store + saga middleware
-│   ├── saga.ts          # All async logic (this example)
-│   └── api.ts           # API abstraction
-├── rspack.config.js
-├── package.json
-└── README.md
-```
+- **react14-preventdefault-rspack**: Using `preventDefault` to stop default event behavior (Rspack setup)
 
----
+- **react15-controlled-uncontrolled-rspack**: Controlled vs uncontrolled components in forms (Rspack setup)
 
-# 🧠 How the Saga Works (Step-by-Step)
+## Newly added 13-January
 
-## 1️⃣ Start action
+- **react16-1-HTML-and-JS-form-demo**: Basic HTML and JavaScript form handling demonstration
 
-User clicks **Start Dashboard**:
+- **react16-forms-demo**: React form handling with Rspack setup
 
-```ts
-dispatch({ type: "START_DASHBOARD" });
-```
+- **react17-form-handling**: Advanced form handling patterns and techniques in React
 
-React does **nothing else**.
+- **react18-form-validation**: Form validation implementation in React applications
 
----
+- **react19-router-demo**: Introduction to React Router for client-side routing
 
-## 2️⃣ Saga hears the action
+- **react20-dynamic-routes**: Dynamic routing based on data and parameters
 
-```ts
-yield take("START_DASHBOARD");
-```
+- **react20-dynamic-routes-realworld**: Real-world example of dynamic routing patterns
 
-Saga wakes up and begins a controlled async flow.
+- **react21-protected-routes**: Implementing authentication-based protected routes
 
----
+- **react22-devtools-demo**: Using React DevTools for debugging and performance analysis
 
-## 3️⃣ Delay (optional but educational)
+- **react23-1-runtime-error-HTML-JavaScript**: HTML and JavaScript runtime error handling
 
-```ts
-yield delay(1000);
-```
+- **react23-error-debugging**: Debugging errors in React applications
 
-Demonstrates:
+- **react24-error-boundary**: Error boundary implementation for error handling
 
-* Saga can pause
-* UI does NOT freeze
-* Control flow is explicit
+- **react24-error-boundary-real-world**: Real-world error boundary patterns
+
+- **react25-rest-api**: Consuming REST APIs in React applications
+
+## Newly added 15-January
+
+- **react26-1-HTML-JS-GraphQL**: GraphQL demonstration using HTML, JS.
+
+- **react26-2-graphql-vite-demo5**: GraphQL React Demo with Apollo Client using Vite
+
+- **react26-graphql-demo3**: GraphQL demo with Apollo Client, TypeScript, and Rspack
+
+- **react31-virtual-dom-rendering-rspack-demo**: Virtual DOM rendering demonstration with Rspack
+
+- **react31-reactmemo-rendering-rspack-demo**: React.memo optimization for component re-renders with Rspack
+
+## Newly added 16-January
+
+- **react27-unit-testing-demo2**: Unit testing demonstration for React components
+
+- **react29-storybook-demo2**: React Storybook Demo with Rsbuild for component development
+
+- **react29-storybook-vite-demo**: React Storybook Vite Demo with visual testing and Chromatic
+
+## Newly added 19-January
+
+- **react08-props-demo2**: Additional examples demonstrating props usage and component reusability
+
+- **react09-state-demo**: Focused demonstrations on managing and updating state in React components
+
+- **react32-context-demo**: Demonstrates React Context API for sharing data across components and avoiding props drilling
+
+- **react32-ref-demo**: Introduction to useRef and how refs store mutable values without causing re-renders
+
+- **react32-ref-example**: Practical examples showing real-world use cases of refs (Mini Google search and no re-render)
+
+- **react33-hoc-demo3**: Demonstrates Higher-Order Components (HOCs) and how they are used to wrap components with additional behavior
+
+## Newly added 20-January
+
+- **react34-render-props**: Introduces the Render Props pattern by first explaining the core concept using simple JavaScript callback examples, then mapping the same idea to React.
+
+- **react34-render-props-demo**: Demonstrates a practical React implementation of the Render Props pattern
 
 ---
 
-## 4️⃣ API call
+- **react35-csr-demo**: Demonstrates **Client-Side Rendering (CSR)** in React, showing how the UI is rendered in the browser after JavaScript loads, and how initial HTML is minimal when viewed via “View Page Source”.
 
-```ts
-yield call(fetchTodos);
-```
-
-Saga:
-
-* waits for API response
-* does not block UI
-* handles async cleanly
+- **react35-ssr-demo**: Demonstrates **Server-Side Rendering (SSR)** using React, showing how the server generates complete HTML before sending it to the browser, enabling faster first paint and better SEO visibility.
 
 ---
 
-## 5️⃣ Update Redux state
+- **react36-accessibility-demo**: Demonstrates Accessibility (a11y) best practices in React, focusing on semantic HTML, proper labeling, keyboard navigation, and ARIA attributes to build inclusive and user-friendly interfaces for all users, including those using assistive technologies.
 
-```ts
-yield put({
-  type: "SET_MESSAGE",
-  payload: "Loaded: ..."
-});
-```
+- **react27-unit-test-demo3**: Advanced unit testing demonstration for React components using Jest and Testing Library
 
-Reducer updates state → UI updates automatically.
+- **react30-chromatic-intro**: Introduction to Chromatic for visual testing and UI change detection with Storybook
 
----
+- **react37-saga-intro**: Beginner introduction to Redux-Saga for handling side effects in React applications
 
-## 6️⃣ Background polling starts
+- **react37-saga-api**: Demonstrates Redux-Saga fetching data from APIs and updating UI in response to user actions
 
-```ts
-const pollingTask = yield fork(pollTodos);
-```
+- **react38-saga-demo3**: Advanced Redux-Saga patterns and examples
 
-* `fork` starts a **background task**
-* UI remains responsive
-* Polling runs independently
+- **react41-takeevery-latest**: Comparison of `takeEvery` vs `takeLatest` in Redux-Saga for handling concurrent actions
 
----
+**Quick start (per demo)**
 
-## 7️⃣ Polling loop
+**Prerequisites**
 
-```ts
-while (true) {
-  fetch → update UI → wait 5 seconds
-}
-```
+- Node.js and npm installed (Node 16+ recommended).
 
-This is a **true background process**.
+npx create-react-app project-name --template typscript
+
+### 🔹 What does `npx` mean?
+
+- `npx` is a tool that comes bundled with **npm (Node Package Manager)**.
+- It allows you to **run commands from npm packages without installing them globally**.
+- Example:
+  - If you type `npx create-react-app project-name`, it will temporarily download and run the `create-react-app` package to generate your project.
+  - You don’t need to install `create-react-app` permanently on your computer — `npx` handles it for you.
+
+👉 Think of `npx` as a “one‑time runner” for npm packages.
 
 ---
 
-## 8️⃣ Stop action
+### 🔹 What does `--template typescript` mean?
 
-```ts
-yield take("STOP_DASHBOARD");
-```
+- By default, `create-react-app` sets up a project using **JavaScript**.
+- Adding `--template typescript` tells it to scaffold the project with **TypeScript support**:
+  - It configures the project to use `.tsx` and `.ts` files.
+  - It installs TypeScript and React type definitions (`@types/react`, `@types/react-dom`).
+  - It sets up a `tsconfig.json` file automatically.
 
-Saga waits until user stops the flow.
-
----
-
-## 9️⃣ Cancel background task
-
-```ts
-yield cancel(pollingTask);
-```
-
-Polling stops immediately.
-
-This is **real cancellation**, not a hack.
+It means the project will use **TypeScript instead of plain JavaScript**.
 
 ---
-
-# 📘 FULL README.md (Copy-Paste Ready)
-
-```md
-# React + Rspack + TypeScript + Redux-Saga (Advanced Example)
-
-This project demonstrates how **Redux-Saga** handles:
-
-- API calls
-- Delays
-- Background polling
-- Cancellation
-- Complex async workflows
-
-using **React**, **Rspack**, and **TypeScript**.
-
----
-
-## 🚀 What this project demonstrates
-
-✔ API calls using Redux-Saga  
-✔ Artificial delays using `delay`  
-✔ Background polling using `fork`  
-✔ Cancellation using `cancel`  
-✔ Clean separation of concerns  
-
-> React never performs async work.  
-> Reducers remain pure and synchronous.
-
----
-
-## 🧠 Mental Model
-
-```
-
-UI → dispatch action
-Saga → listens in background
-Saga → async work (API / delay / polling)
-Saga → dispatch result
-Reducer → update state
-UI → re-render
-
-```
-
----
-
-## 📁 Project Structure
-
-```
-
-src/
-├── App.tsx        # UI
-├── index.tsx      # React entry
-├── store.ts       # Redux store + middleware
-├── saga.ts        # All async logic
-└── api.ts         # API abstraction
-
-````
-
----
-
-## 🛠️ Setup
-
-```bash
-npm install
-npm start
-````
-
-App runs at:
-
-```
-http://localhost:3000
-```
-
----
-
-## ▶️ How the App Works
-
-### Buttons
-
-* **Start Dashboard**
-
-  * Fetches data
-  * Starts background polling every 5 seconds
-
-* **Stop Dashboard**
-
-  * Cancels polling
-  * Stops background work
-
----
-
-## 🔄 Saga Flow
-
-1. Wait for `START_DASHBOARD`
-2. Delay for 1 second
-3. Fetch todos from API
-4. Update Redux state
-5. Start polling in background
-6. Wait for `STOP_DASHBOARD`
-7. Cancel polling task
-
----
-
-## 🌐 API Used
-
-```
-https://dummyjson.com/todos
-```
-
-Response:
-
-```json
-{
-  "todos": [
-    { "id": 1, "todo": "...", "completed": false }
-  ]
-}
-```
-
-Saga extracts:
-
-```ts
-data.todos[0].todo
-```
-
----
-
-## 🧪 Why timestamps are used
-
-Polling data may not change.
-A timestamp proves the background task is running:
-
-```
-Polling (10:45:01): ...
-Polling (10:45:06): ...
-```
-
----
-
-## 🎯 Learning Outcomes
-
-After this project, you can:
-
-* Explain why Redux-Saga exists
-* Write sagas using `call`, `put`, `delay`
-* Create background tasks with `fork`
-* Cancel tasks safely
-* Handle complex async flows cleanly
-
----
-
-## 🧠 Key Takeaway
-
-> Redux-Saga is not just for API calls.
-> It is a **workflow orchestration tool** for async logic.
-
----
-
-## 📌 Next Steps
-
-* Add loading state
-* Add error handling
-* Use `takeLatest`
-* Test sagas
-* Compare with Redux Thunk
-
----
-
-Happy learning 🚀
-
-```
-
----
-
-## ✅ Final Summary
-
-You now have an example that demonstrates **all** of this:
-
-✔ API calls  
-✔ Delays  
-✔ Background tasks  
-✔ Complex async flows  
-✔ Cancellation  
-
