@@ -1,31 +1,5 @@
 
 
-### 3️⃣ Accessibility (a11y)
-
-**What it is**
-Making apps usable for **everyone**, including people with disabilities.
-
-**Key concepts**
-
-* Semantic HTML (`button`, `nav`, `main`)
-* Keyboard navigation
-* Screen readers
-* ARIA attributes
-
-**Example**
-
-```jsx
-<button aria-label="Close modal">X</button>
-```
-
-**Why it matters**
-
-* Legal compliance
-* Better UX
-* Strong professional skill 💼
-
----
-
 ## 🔁 Redux & Redux-Saga – Design Patterns
 
 ---
