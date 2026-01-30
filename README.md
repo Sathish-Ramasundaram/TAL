@@ -109,17 +109,6 @@ A comprehensive collection of React learning demos covering fundamentals, patter
 
 - **react30-chromatic-intro**: Introduction to Chromatic for visual testing and UI change detection with Storybook
 
-### Redux-Saga & State Management
-
-- **react37-saga01-intro**: Redux-Saga beginner introduction
-- **react37-saga02**: Redux-Saga basics and core concepts
-- **react37-saga03**: Search feature using Redux-Saga with `takeLatest`
-- **react37-saga04**: Error handling with Redux-Saga
-- **react37-saga-intro**: Redux-Saga for handling side effects in React
-- **react37-saga-api**: Redux-Saga fetching data from APIs and updating UI
-- **react38-saga-demo3**: Advanced Redux-Saga patterns and examples
-- **react41-takeevery-latest**: Comparison of `takeEvery` vs `takeLatest` for handling concurrent actions
-
 ---
 
 ## 🚀 Quick Start
